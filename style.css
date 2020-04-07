@@ -1,0 +1,62 @@
+body {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+
+
+.text {
+    width: 720px;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+.keyboard {
+    width: 650px;
+    margin: auto;
+}
+
+.rows{
+    padding: 10px;
+    margin: 3px;
+
+}
+.buttons {
+    padding: 10px;
+    margin: 3px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.buttons:hover {
+    background-color: cornsilk;
+}
+
+#Backspace {
+    padding: 10px 20px;
+}
+
+#Tab, #Delete {
+    padding: 10px 15px;
+}
+
+#ShiftLeft {
+    padding: 10px 21px;
+}
+
+#ShiftRight {
+    padding: 10px 28px;
+}
+
+#Enter {
+    padding: 10px 34px;
+}
+
+#Space {
+    padding: 10px 86px;
+}
+
+.active, .buttons:active {
+    background-color: yellow;
+}
+
