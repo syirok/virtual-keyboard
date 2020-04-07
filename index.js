@@ -49,7 +49,6 @@ function SwitchLeng() {
 function PressAnimation(event, catching) {
     if (document.querySelector("#" + catching)) {
         document.querySelector("#" + catching).classList.add("active");
-        console.log(document.querySelector("#" + catching).classList);
     }
 };
 
@@ -138,8 +137,7 @@ window.onload = () => {
     }
 
     const btn = document.querySelector('.keyboard');
-    console.log(btn);
-
+    
     /* real keyboard action */ 
     document.addEventListener('keydown', function(event) {
         PressAnimation(event, event.code);
@@ -148,7 +146,6 @@ window.onload = () => {
         event.preventDefault();
 
         if (event.code == 'ControlLeft' && event.shiftKey == true) {
-            console.log(event);
             SwitchLeng();
         }
             
